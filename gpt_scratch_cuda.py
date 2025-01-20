@@ -12,6 +12,12 @@ from model import GPT, GPTConfig
 
 os.environ['CC'] = 'gcc'
 
+# TODO: add flops utilization function
+# TODO: generate function
+# TODO: add eval, checkpoint saving and resuming, with state_dict
+# TODO: https://github.com/karpathy/nanoGPT/blob/master/transformer_sizing.ipynb
+# TODO: load and run larger dataset from huggingface
+
 # set seed before model initialization! 
 # all ddp processes will share the same seed
 torch.manual_seed(922)
